@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AE0CD87-0ADB-49D6-94EC-D490509189D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MajorProject</RootNamespace>
+    <AssemblyName>MajorProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>Resources\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\AllUserControl\CustomerDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Business\AllUserControl\CustomerDetails.Designer.cs">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\AllUserControl\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\AllUserControl\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\AllUserControl\UC_AddRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Business\AllUserControl\UC_AddRoom.Designer.cs">
+      <DependentUpon>UC_AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\AllUserControl\UC_CustomerCheckOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Business\AllUserControl\UC_CustomerCheckOut.Designer.cs">
+      <DependentUpon>UC_CustomerCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\AllUserControl\UC_CustomerRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Business\AllUserControl\UC_CustomerRegistration.Designer.cs">
+      <DependentUpon>UC_CustomerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\Family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business\Family.Designer.cs">
+      <DependentUpon>Family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\function.cs" />
+    <Compile Include="Business\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Business\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPmb5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupPmb5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPmb5DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupPmb5DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPmb5DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupPmb5DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GroupPmb5DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupPmb5DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Business\AllUserControl\CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\AllUserControl\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\AllUserControl\UC_AddRoom.resx">
+      <DependentUpon>UC_AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\AllUserControl\UC_CustomerCheckOut.resx">
+      <DependentUpon>UC_CustomerCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\AllUserControl\UC_CustomerRegistration.resx">
+      <DependentUpon>UC_CustomerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business\Family.resx">
+      <DependentUpon>Family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="GroupPmb5DataSet.xsc">
+      <DependentUpon>GroupPmb5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupPmb5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupPmb5DataSet.xss">
+      <DependentUpon>GroupPmb5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet1.xsc">
+      <DependentUpon>GroupPmb5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupPmb5DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupPmb5DataSet1.xss">
+      <DependentUpon>GroupPmb5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet2.xsc">
+      <DependentUpon>GroupPmb5DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupPmb5DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupPmb5DataSet2.xss">
+      <DependentUpon>GroupPmb5DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet3.xsc">
+      <DependentUpon>GroupPmb5DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GroupPmb5DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupPmb5DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupPmb5DataSet3.xss">
+      <DependentUpon>GroupPmb5DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\2.jpg" />
+    <Content Include="Resources\3.png" />
+    <Content Include="Resources\f1.jpg" />
+    <Content Include="Resources\logo.jpg" />
+    <Content Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
